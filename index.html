@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemicalPeelForm</title>
+</head>
+<body  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color:whitesmoke;
+margin-left: 70px;
+font-size: 25px;
+line-height: 2;">
+    <form id="form">
+        <!-- <P style="page-break-before: always"> -->
+        <H2 style="text-align: center; margin: 20px 0px;">Chemical Peel Form</H2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"> <br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip"><br>
+
+        <label for="number">Phone Number:</label>
+        <input type="number" id="number" name="number">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"> <br>
+
+        <label for="birthday">Birthday:</label>
+
+        <label for="birthdayM">Month:</label>
+        <input type="number" id="birthdayM" name="birthdayM">
+
+        <label for="birthdayD">Day:</label>
+        <input type="number" id="birthdayD" name="birthdayD">
+
+        <p>Peels are designed to stimulate the skin and may help regenerate new cells, produe collagen and increase blood flow. Peels can help clear up mild acne, however it is NOT a cure for any skin condition.</p>
+
+        <h4><u><b>CONTRIDICTIONS</b></u></h4>
+
+        <label for="conditions"></label>
+        <input type="checkbox" name="conditions" value="pregnant">Pregnant<br>
+        <input type="checkbox" name="conditions" value="nursing">Nursing<br>
+
+        <P style="page-break-before: always"></P>
+
+        <input type="checkbox" name="conditions" value="tryingForPregnancy">Trying to get pregnant<br>
+        <input type="checkbox" name="conditions" value="diabetes">Diabetes<br>
+        <input type="checkbox" name="conditions" value="highBloodPressure">High Blood Pressure<br>
+        <input type="checkbox" name="conditions" value="heartDisease">Heart Disease<br>
+        <input type="checkbox" name="conditions" value="herpies">Active Herpies (fever blisters)<br>
+        <input type="checkbox" name="conditions" value="badImmuneSystem">Deficiant Immune System<br>
+        <input type="checkbox" name="conditions" value="roseasea">Severe Roseasea<br>
+        <input type="checkbox" name="conditions" value="sunBurn">Sun Burn<br>
+        <input type="checkbox" name="conditions" value="skinCancer">Skin Cancer<br>
+
+        <p><b>*By checking the box, you agree you have read and accept the following statements below.</b></p>
+        
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge I have not been on <b>Accutane</b> (RX acne medication) within the passed 6 months.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge I have not used Retin-A or any other form of Retinol in the passed 14 days.</label> <br>
+
+        <P style="page-break-before: always"></P>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge that during the peel application, my skin may itch, tingle, sting, burn or feel warm</label> <br>
+        
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge there is No Gaurantee the dark discoloration of the skin will be reduced. My skin may temporarily develop uneven color, especially if I have uneven color before the peel.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge that after the peel, my face may appear sunburned, the skin may darken, feel tight and be more sensitive. At 2-7 days my skin <b>may or may not</b>visibly slough skin. Pulling or picking skin may lead to scarring or other complications.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I may experience breakout after a peel (for a period of up to 7 days). Chemical peels make extractions of comedones easier and the acne will improve with recommended treatments.</label> <br>
+
+        <P style="page-break-before: always"></P>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge there is a possibility of an allergic reaction. <u> I can request a patch test before my service.</u></label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge I have Not had Botox or other injectables in the passed 14 days.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge I have Not had laser in the area being treated within the last month.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I acknowledge that if I am prone to herpes virus (cold sores around the mouth, nose or shingles) I may need to get an antiviral prescription from my medical doctor or dentist prior to having a chemical peel. (Peels may trigger a herpes virus outbreak).</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I agree to NO EXERCIES for a period of 72 hours as increased core body temperature may cause hyperpigmentation or other complications.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I agree to stay out of the sun for 72 hours and to wear a sunscreen with an SPF 30 or higher.</label> <br>
+
+        <P style="page-break-before: always"></P>
+
+        <p>I have answered the above history to the best of my knowledge. I have read and understand all of the above information. I consent to having a chemical peel service.</p>
+
+        <!-- <P style="page-break-before: always"></P> -->
+
+        <h4>Signature:</h4>
+        
+        <button class="write">Write Electronic Signature</button>
+
+        <div id="sig"></div>
+        <p><span><a href="#" class="clear-button hidden">Clear</a></span><span><a href="#" class="done hidden" style="color: #000; margin-left: 250px;">Done</a></span></p>
+        <canvas height="150" width="550" class="signature-pad hidden"></canvas>
+
+
+</form>
+<div id="button" style="text-align: center;
+cursor: pointer;
+border: 2px solid black;
+padding: 4px;
+margin: auto;
+max-width: fit-content;
+border-radius: 10px;
+font-size: 40px;">Done</div>
+
+<div class="hidden" id="loading"style="z-index: 7; position: fixed; font-size: 50px; background-color: lightgray; top: 50%; left: 30%; border: 3px solid black; padding: 40px; border-radius: 15px;">Processing...</div>
+<div class="hidden" id="fileSave"style="z-index: 7; position: fixed; font-size: 50px; background-color: lightgray; top: 50%; left: 30%; border: 3px solid black; padding: 40px; border-radius: 15px">File Saved!</div>
+<style>
+    .hidden{
+        display: none;
+    }
+
+    :root {
+    --primary-color: #000;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        padding: 1rem;
+    }
+    .signature-pad-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .signature-pad {
+        cursor: url(pen.png) 1 26, pointer;
+        border: 2px solid var(--primary-color);
+        border-radius: 4px;
+    }
+    .clear-button {
+        color: var(--primary-color);
+    }
+    .submit-button {
+        width: 100%;
+        background-color: var(--primary-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    .overflow{
+        overflow:hidden;
+    }
+    
+</style>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+<script>
+    var ok = document.getElementById('button');
+    var body = document.querySelector('body')
+    var labels = document.getElementsByTagName('LABEL');
+    var input = document.getElementsByTagName('INPUT');
+    var load = document.getElementById('loading');
+    var done = document.getElementById('fileSave');
+    var doneButton = document.querySelector('.done')
+    var style = document.createElement('style');
+    var name = document.getElementById('name');
+    const sig = document.getElementById('sig');
+    const canvas = document.querySelector('canvas');
+    const form = document.querySelector('#form');
+    const clearButton = document.querySelector('.clear-button');
+    const write = document.querySelector('.write');
+    const ctx = canvas.getContext('2d');
+    let writingMode = false;
+
+    write.addEventListener('click', (event) => {
+        event.preventDefault()
+        canvas.classList.remove('hidden')
+        clearButton.classList.remove('hidden')
+        doneButton.classList.remove('hidden')
+        write.classList.add('hidden')
+        body.classList.add('overflow')
+    })
+    const clearPad = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    doneButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        body.classList.remove('overflow')
+        const imageURL = canvas.toDataURL();
+        const image = document.createElement('img');
+        image.src = imageURL;
+        image.height = canvas.height;
+        image.width = canvas.width;
+        image.style.display = 'block';
+        canvas.classList.add('hidden')
+        doneButton.classList.add('hidden')
+        clearButton.classList.add('hidden')
+        write.classList.remove('hidden')
+        while (sig.firstChild) {
+        sig.removeChild(sig.lastChild);
+        }
+            sig.appendChild(image);
+            clearPad();
+        })
+
+    const getCursorPosition = (event) => {
+        positionX = event.clientX - event.target.getBoundingClientRect().x;
+        positionY = event.clientY - event.target.getBoundingClientRect().y;
+        return [positionX, positionY];
+    }
+
+    const handlePointerDown = (event) => {
+        writingMode = true;
+        ctx.beginPath();
+        const [positionX, positionY] = getCursorPosition(event);
+        ctx.moveTo(positionX, positionY);
+    }
+    const handlePointerUp = () => {
+        writingMode = false;
+    }
+
+    const handlePointerMove = (event) => {
+        if (!writingMode) return
+        const [positionX, positionY] = getCursorPosition(event);
+        ctx.lineTo(positionX, positionY);
+        ctx.stroke();
+    }
+
+    clearButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    })
+
+    ctx.lineWidth = 2;
+    ctx.lineJoin = ctx.lineCap = 'round';
+
+    canvas.addEventListener('pointerdown', handlePointerDown, {passive: true});
+    canvas.addEventListener('pointerup', handlePointerUp, {passive: true});
+    canvas.addEventListener('pointermove', handlePointerMove, {passive: true});
+
+    ok.addEventListener('click', async function(event){      
+        event.preventDefault()
+        console.log(form)
+        var name = form.name.value + "ChemicalPeel"
+        var opt = {
+        margin:       1,
+        filename:     name,
+        image:        { type: 'jpeg=', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+        await load.classList.remove('hidden');
+        await html2pdf().set(opt).from(form).save();
+        await load.classList.add('hidden');
+        await done.classList.remove('hidden')
+    })
+
+    done.addEventListener("click", function(){
+        location.reload()
+    })
+ </script> 
+ </html> 
